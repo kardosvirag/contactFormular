@@ -1,0 +1,22 @@
+{
+  "name": "contactform",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kardosvirag/contactFormular.git"
+  },
+  "author": "Virag Drago-Kardos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kardosvirag/contactFormular/issues"
+  },
+  "homepage": "https://github.com/kardosvirag/contactFormular#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
