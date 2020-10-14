@@ -10,9 +10,9 @@ body, html {
 }
 
 .hero-image{
-    background: url("./img/background.jpg");
-    height: 100vh;
-    width: 100vw;
+    background: url("./img/hero.jpg");
+    height: 100%;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,34 +21,206 @@ body, html {
 
 .hero-inner{
     position: absolute;
-    width: 80%;
-    padding: 20px 10px 30px 10px;
+    width: 75%;
+    padding: 30px 20px 30px 20px;
     left: 50%;
-    top: 10%;
-    transform: translate(-50%, -10%);
+    top: 50%;
+    transform: translate(-50%, -50%);
     background-color:rgba(255, 255, 255, 0.4);
     color: #3f5eb5;
+    box-shadow: 1px 1px 7px rgb(110, 100, 134);
 }
 
 h2{
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.input-field{
+    width: 100%;
+    background: none;
+    padding: 20px 0 5px 0;
+    border: none;
+    border-bottom: 1px solid #3f5eb5;
 }
 
 
-@media only screen and (min-width: 1007px) {
+.input-field::placeholder{
+    color: #3f5eb5;
+    font-size: 14px;
+}
+
+textarea::placeholder{
+    color: #3f5eb5;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea{
+    height: 70px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.checkbox-container{
+    margin-top: 20px;
+}
+
+input[type="checkbox"] {
+    display:none;
+}
+
+input[type="checkbox"] + label::before {
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    border: 1px solid #3f5eb5;
+    background-color: #fff;
+    display: block;
+    content: "";
+    float: left;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+
+input[type="checkbox"]:checked+label::before {
+    box-shadow: inset 0px 0px 0px 3px #fff;
+    background-color: #2ab45f;
+}
+
+.checkbox-container label{
+    font-size: 14px;
+    vertical-align: text-top;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    background-color: #3f5eb5;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.button:hover{
+    background-color: #2ab45f;
+    padding: 8px 16px;
+}
+
+
+/* Landscape */
+@media only screen and (orientation: landscape) and (min-width : 319px) and (max-width: 640px) {
+
+    .hero-image{
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: fixed;
+        overflow: scroll;
+    }
+
+    .hero-inner{
+        transform: translate(-50%, -10%);
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width: 641px) {
+
     .hero-inner{
         position: absolute;
-        width: 50%;
-        height: 50%;
+        width: 521px;
+        padding: 40px 30px 40px 30px;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        background-color: #ffffff;
-        background-color:rgba(255, 255, 255, 0.7);
+    }
+    
+    h2{
+        margin-bottom: 20px;
+        font-size: 26px;
+    }
+    
+    .input-field{
+        padding: 25px 0 5px 0;
+    }
+    
+    .input-field::placeholder{
+        font-size: 16px;
+    }
+    
+    textarea::placeholder{
+        font-size: 16px;
+    }
+    
+    textarea{
+        height: 90px;
+    }
+    
+    .checkbox-container{
+        margin-top: 30px;
+    }
+    
+    input[type="checkbox"] {
+        display:none;
+    }
+    
+    input[type="checkbox"] + label::before {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        margin-right: 10px;
+      }
+    
+    .checkbox-container label{
+        font-size: 16px;
+    }
+    
+    .button{
+        padding: 10px 26px;
+        margin-top: 40px;
+        font-size: 16px;
+    }
+    
+    .button:hover{
+        padding: 10px 26px;
     }
   }
+
+
+  @media only screen and (orientation: landscape) and (min-width: 641px) and (max-width: 941px) {
+
+    .hero-image{
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: fixed;
+        overflow: scroll;
+    }
+
+    .hero-inner{
+        transform: translate(-50%, -30%);
+        margin-bottom: 50px;
+    }
+}
 
 
 

@@ -12,29 +12,19 @@
         <div class="hero-image">
             <div class="hero-inner">
                 <h2>Contact us </h2>
-                <div class="form_feld">
-                    <label for="name">Name</label>
-                    <input id="name" type="text" autocomplete="off">
-                </div>
-                <div class="form_feld">
-                    <label for="email_adress">E-mail</label>
-                    <input id="email_adress" type="email">
-                </div>
-                <div class="form_feld">
-                    <label for="telefon">Telefon number</label>
-                    <input id="telefon" type="tel">
-                </div>
-                <div class="form_feld">
-                    <label for="message">Message</label>
-                    <input type="text" id="message">
-                </div>    
-                <div class="form_feld">
-                    <input id="checkbox" type="checkbox">
+                <input id="name" type="text" autocomplete="off" placeholder="First Name" class="input-field name">
+                <input id="name" type="text" autocomplete="off" placeholder="Second Name" class="input-field name">
+                <input id="email_adress" type="email" placeholder="Email" class="input-field">
+                <input id="telefon" type="tel" placeholder="Phone Number"  class="input-field">
+                <textarea type="text" id="message" placeholder="Message"  class="input-field"></textarea>
+                <div class="checkbox-container">
+                    <input id="checkbox" type="checkbox" class="checkbox">
                     <label for="checkbox">Subscribe to newsletter?</label>
-                </div>    
-                <input id="button" type="submit" value="Submit ->">
+                </div>  
+                <div class="btn-container">
+                    <input id="button" class="button" type="button" value="Send">
+                </div>  
             </div>
-            
         </div>
     </body>
 </html>
